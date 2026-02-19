@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>ÉCLIPSE URBAINE - Chargement</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="content">
+
+    <div class="eclipse-wrapper">
+        <div class="eclipse"></div>
+        <img src="logo.png" class="logo-center">
+    </div>
+
+    <h1>ÉCLIPSE URBAINE</h1>
+    <p id="loading-text">Connexion à Los Santos...</p>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progress"></div>
+    </div>
+
+    <button id="music-toggle" class="music-btn">⏸ Pause</button>
+
+    <div class="volume-container">
+        🔊
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+    </div>
+
+</div>
+
+<audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
